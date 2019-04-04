@@ -2,7 +2,7 @@ Package: com.anemone3_3.0~beta5
 Version: 3.0~beta5
 Section: Tweaks
 Maintainer: AnemoneTeam <anemonetheming@gmail.com>
-Depends: firmware (>=11.0)
+Depends: firmware (>=11.0),
 Architecture: iphoneos-arm
 Filename: https://developer7769.github.io/FSHA/com.anemonetheming.anemone3_3.0_beta5_iphoneos-arm.deb
 Size: 16818
