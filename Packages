@@ -7,6 +7,6 @@ Architecture: iphoneos-arm
 Filename: debs/com.anemone3_3.0_beta5.deb
 Size: 11285692
 MD5sum: d75d950d43aba2b863df360fbb879571
-Description: This is a sample new package. Firmware should be greater than 7.0
+Description: اراة تجريبه 
 Name: anemone3
 Author: Reposi3 <reposithree@gmail.com>
