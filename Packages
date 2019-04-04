@@ -2,13 +2,11 @@ Package: com.anemone3_3.0~beta5
 Version: 3.0~beta5
 Section: Tweaks
 Maintainer: AnemoneTeam <anemonetheming@gmail.com>
-Depends: firmware (>=11.0), com.ex.libsubstitute, pincrush
+Depends: firmware (>=11.0)
 Architecture: iphoneos-arm
-Filename: ./debs/com.anemone3_3.0~beta5.deb
+Filename: https://developer7769.github.io/FSHA/com.anemonetheming.anemone3_3.0_beta5_iphoneos-arm.deb
 Size: 16818
-MD5sum: d75d950d43aba2b863df360fbb879571
-SHA1: 6dc022ef86d5b82d720f9548f09edae26f2a274f
-SHA256: 3c9901e69e56de63314f5be559dc877534b1e9060ea2ae4cd5f1d9a9a069eebf
+MD5sum: 7adc37c9c7050089c23477ea9ebc2f91
 Description: An awesome theme manager! (Faraj Alqhatani)
 Icon: https://coolstar.moe/sileoassets/featured/anemone3-icon.png
 Name: Anemone 3
