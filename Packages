@@ -1,13 +1,13 @@
-Package: com.anemone3_3.0~beta5
+Package: com.anemonetheming.anemone3
 Version: 3.0~beta5
 Section: Tweaks
-Maintainer: AnemoneTeam <anemonetheming@gmail.com>
-Depends: firmware (>=11.0),
+Maintainer: Reposi3 <reposithree@gmail.com>
+Depends: firmware (>11.0),
 Architecture: iphoneos-arm
 Filename: https://developer7769.github.io/FSHA/com.anemonetheming.anemone3_3.0_beta5_iphoneos-arm.deb
-Size: 16818
+Size: 854
 MD5sum: 7adc37c9c7050089c23477ea9ebc2f91
-Description: An awesome theme manager! (Faraj Alqhatani)
-Icon: https://coolstar.moe/sileoassets/featured/anemone3-icon.png
-Name: Anemone 3
-Author: AnemoneTeam <anemonetheming@gmail.com>
+Description: This is a sample new package. Firmware should be greater than 7.0
+Name: New Package
+Author: Reposi3 <reposithree@gmail.com>
+Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.newpackage
