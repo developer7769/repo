@@ -1,27 +1,1501 @@
-<html lang="en"><head>
-  <title>Themes4Cydia2</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="SHORTCUT ICON" href="Imager/favicon.ico?v=2">
-<link rel="apple-touch-icon" href="Imager/LogoIcon.png?v=2">
-<link rel="stylesheet" type="text/css" href="depictions/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Profile - 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Profile___1;
+	}
+	#Profile___1 * {
+		/*margin: 0;
+		padding: 0;*/
+	}
+	#Profile___1 {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(42,46,67,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Profile - 1;
+		--web-view-id: Profile___1;
+		--web-enable-deep-linking: true;
+	}
+	#content {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 953px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#posts {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 483px;
+		left: 16px;
+		top: 470px;
+		overflow: hidden;
+	}
+	#posts_A48_Group_2 {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 221px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#post {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 221px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#form {
+		opacity: 1;
+		filter: drop-shadow(0px 4px 16px rgba(69, 91, 99, 0.078));
+		fill: rgba(53,58,80,1);
+	}
+	.form {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 391px;
+		height: 269px;
+	}
+	#content_A48_Group_3 {
+		opacity: 1;
+		position: absolute;
+		width: 295px;
+		height: 133px;
+		left: 24px;
+		top: 79px;
+		overflow: visible;
+	}
+	#Your_success_and_happiness_lie {
+		opacity: 0.641;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 296px;
+		height: 86px;
+		line-height: 22px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#icons {
+		opacity: 1;
+		position: absolute;
+		width: 295px;
+		height: 25px;
+		left: 0px;
+		top: 108px;
+		overflow: visible;
+	}
+	#ID256 {
+		opacity: 1;
+		position: absolute;
+		left: 179px;
+		top: 7px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 21px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(187,188,205,1);
+	}
+	#ID4_K {
+		opacity: 1;
+		position: absolute;
+		left: 249px;
+		top: 7px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(187,188,205,1);
+	}
+	#icons_share_dark {
+		opacity: 1;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 1px;
+		overflow: visible;
+	}
+	#bg {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#path {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.path {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 3px;
+		left: 5px;
+		width: 14.761px;
+		height: 18px;
+	}
+	#icons_comment_dark {
+		opacity: 1;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 203px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_2 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#path_A48_Path_3 {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.path_A48_Path_3 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		width: 18px;
+		height: 18px;
+	}
+	#icons_like_dark {
+		opacity: 1;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 271px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_3 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#path_A48_Path_4 {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.path_A48_Path_4 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 4px;
+		left: 3px;
+		width: 18px;
+		height: 16.353px;
+	}
+	#divider {
+		opacity: 0.045;
+		fill: rgba(255,255,255,1);
+	}
+	.divider {
+		position: absolute;
+		overflow: visible;
+		width: 295px;
+		height: 1px;
+		left: 0px;
+		top: 99px;
+	}
+	#avatar_black {
+		opacity: 1;
+		position: absolute;
+		width: 303px;
+		height: 44px;
+		left: 24px;
+		top: 16px;
+		overflow: visible;
+	}
+	#author {
+		opacity: 1;
+		position: absolute;
+		width: 123px;
+		height: 36px;
+		left: 0px;
+		top: 8px;
+		overflow: visible;
+	}
+	#Jony_Blake {
+		opacity: 1;
+		position: absolute;
+		left: 45px;
+		top: 3px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 79px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#ID1_hour_ago {
+		opacity: 0.56;
+		position: absolute;
+		left: 44px;
+		top: 23px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 58px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#avatar {
+		opacity: 1;
+		fill: url(#avatar_A48_Rectangle_6_pattern);
+	}
+	.avatar {
+		position: absolute;
+		overflow: visible;
+		width: 36px;
+		height: 36px;
+		left: 0px;
+		top: 0px;
+	}
+	#icons_chevron_light {
+		opacity: 0.315;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 279px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_7 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_7 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#line {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.line {
+		position: absolute;
+		overflow: visible;
+		width: 7.071px;
+		height: 7.071px;
+		left: 7px;
+		top: 8.464px;
+		transform: rotate(45deg);
+		transform-origin: left;
+	}
+	#line_A48_Rectangle_9 {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.line_A48_Rectangle_9 {
+		position: absolute;
+		overflow: visible;
+		width: 7.071px;
+		height: 7.071px;
+		left: 11.3px;
+		top: 8.464px;
+		transform: rotate(-45deg);
+		transform-origin: left;
+	}
+	#posts_A48_Group_6 {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 221px;
+		left: 0px;
+		top: 245px;
+		overflow: visible;
+	}
+	#post_A48_SymbolInstance_7 {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 221px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#form_A48_Path_5 {
+		opacity: 1;
+		filter: drop-shadow(0px 4px 16px rgba(69, 91, 99, 0.078));
+		fill: rgba(53,58,80,1);
+	}
+	.form_A48_Path_5 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 391px;
+		height: 269px;
+	}
+	#content_A48_Group_7 {
+		opacity: 1;
+		position: absolute;
+		width: 295px;
+		height: 133px;
+		left: 24px;
+		top: 79px;
+		overflow: visible;
+	}
+	#When_one_door_of_happiness_clo {
+		opacity: 0.641;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 296px;
+		height: 86px;
+		line-height: 22px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#icons_A48_Group_8 {
+		opacity: 1;
+		position: absolute;
+		width: 295px;
+		height: 25px;
+		left: 0px;
+		top: 108px;
+		overflow: visible;
+	}
+	#ID256_A48_Text_7 {
+		opacity: 1;
+		position: absolute;
+		left: 179px;
+		top: 7px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 21px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(187,188,205,1);
+	}
+	#ID4_K_A48_Text_8 {
+		opacity: 1;
+		position: absolute;
+		left: 249px;
+		top: 7px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(187,188,205,1);
+	}
+	#icons_share_dark_A48_SymbolInstance_8 {
+		opacity: 1;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 1px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_10 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_10 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#path_A48_Path_6 {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.path_A48_Path_6 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 3px;
+		left: 5px;
+		width: 14.761px;
+		height: 18px;
+	}
+	#icons_comment_dark_A48_SymbolInstance_9 {
+		opacity: 1;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 203px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_11 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_11 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#path_A48_Path_7 {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.path_A48_Path_7 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		width: 18px;
+		height: 18px;
+	}
+	#icons_like_dark_A48_SymbolInstance_10 {
+		opacity: 1;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 271px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_12 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_12 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#path_A48_Path_8 {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.path_A48_Path_8 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 4px;
+		left: 3px;
+		width: 18px;
+		height: 16.353px;
+	}
+	#divider_A48_Rectangle_13 {
+		opacity: 0.045;
+		fill: rgba(255,255,255,1);
+	}
+	.divider_A48_Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 295px;
+		height: 1px;
+		left: 0px;
+		top: 99px;
+	}
+	#avatar_black_A48_Group_9 {
+		opacity: 1;
+		position: absolute;
+		width: 303px;
+		height: 44px;
+		left: 24px;
+		top: 16px;
+		overflow: visible;
+	}
+	#author_A48_SymbolInstance_11 {
+		opacity: 1;
+		position: absolute;
+		width: 123px;
+		height: 36px;
+		left: 0px;
+		top: 8px;
+		overflow: visible;
+	}
+	#Jony_Blake_A48_Text_9 {
+		opacity: 1;
+		position: absolute;
+		left: 45px;
+		top: 3px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 79px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#ID2_hour_ago {
+		opacity: 0.56;
+		position: absolute;
+		left: 44px;
+		top: 23px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 58px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#avatar_A48_Rectangle_14 {
+		opacity: 1;
+		fill: url(#avatar_A48_Rectangle_15_pattern);
+	}
+	.avatar_A48_Rectangle_14 {
+		position: absolute;
+		overflow: visible;
+		width: 36px;
+		height: 36px;
+		left: 0px;
+		top: 0px;
+	}
+	#icons_chevron_light_A48_SymbolInstance_12 {
+		opacity: 0.315;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 279px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_16 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#line_A48_Rectangle_17 {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.line_A48_Rectangle_17 {
+		position: absolute;
+		overflow: visible;
+		width: 7.071px;
+		height: 7.071px;
+		left: 7px;
+		top: 8.464px;
+		transform: rotate(45deg);
+		transform-origin: left;
+	}
+	#line_A48_Rectangle_18 {
+		opacity: 1;
+		fill: rgba(187,188,205,1);
+	}
+	.line_A48_Rectangle_18 {
+		position: absolute;
+		overflow: visible;
+		width: 7.071px;
+		height: 7.071px;
+		left: 11.3px;
+		top: 8.464px;
+		transform: rotate(-45deg);
+		transform-origin: left;
+	}
+	#segmented_control {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 44px;
+		left: 16px;
+		top: 402px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_19 {
+		opacity: 1;
+		fill: rgba(53,58,80,1);
+	}
+	.bg_A48_Rectangle_19 {
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#bg_A48_Rectangle_20 {
+		opacity: 1;
+		fill: rgba(58,204,225,1);
+	}
+	.bg_A48_Rectangle_20 {
+		position: absolute;
+		overflow: visible;
+		width: 172px;
+		height: 44px;
+		left: 171px;
+		top: 0px;
+	}
+	#POPULAR {
+		opacity: 0.6;
+		position: absolute;
+		left: 66px;
+		top: 17px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 58px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#RECENT {
+		opacity: 1;
+		position: absolute;
+		left: 236px;
+		top: 18px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#data {
+		opacity: 1;
+		position: absolute;
+		width: 282px;
+		height: 41px;
+		left: 37px;
+		top: 330px;
+		overflow: visible;
+	}
+	#divider_A48_Rectangle_21 {
+		opacity: 0.04;
+		fill: rgba(255,255,255,1);
+	}
+	.divider_A48_Rectangle_21 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 40px;
+		left: 212px;
+		top: 0px;
+	}
+	#divider_A48_Rectangle_22 {
+		opacity: 0.04;
+		fill: rgba(255,255,255,1);
+	}
+	.divider_A48_Rectangle_22 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 40px;
+		left: 94px;
+		top: 0px;
+	}
+	#LIKES {
+		opacity: 0.5;
+		position: absolute;
+		left: 247px;
+		top: 29px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#ID321 {
+		opacity: 1;
+		position: absolute;
+		left: 246px;
+		top: 2px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#FOLLOWING {
+		opacity: 0.5;
+		position: absolute;
+		left: 115px;
+		top: 29px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 73px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#ID150 {
+		opacity: 1;
+		position: absolute;
+		left: 133px;
+		top: 2px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#FOLLOWERS {
+		opacity: 0.5;
+		position: absolute;
+		left: 0px;
+		top: 29px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#ID125 {
+		opacity: 1;
+		position: absolute;
+		left: 20px;
+		top: 2px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#photo {
+		opacity: 0.766;
+		fill: url(#photo_A48_Rectangle_24_pattern);
+	}
+	.photo {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 320px;
+		left: 0px;
+		top: 0px;
+	}
+	#bg_A48_Rectangle_25 {
+		opacity: 1;
+		fill: url(#LinearGradientFill1);
+	}
+	.bg_A48_Rectangle_25 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 152px;
+		left: 0px;
+		top: 169px;
+	}
+	#Jony_Blake_A48_Text_19 {
+		opacity: 1;
+		position: absolute;
+		left: 60px;
+		top: 258px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 197px;
+		white-space: nowrap;
+		line-height: 44px;
+		margin-top: -2px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#bottom {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 24px;
+		left: 0px;
+		top: 788px;
+		overflow: visible;
+	}
+	#home_indicator_dark {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_26 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_26 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#indicator {
+		opacity: 0.5;
+		fill: rgba(85,88,105,1);
+	}
+	.indicator {
+		position: absolute;
+		overflow: visible;
+		width: 134px;
+		height: 3px;
+		left: 121px;
+		top: 12px;
+	}
+	#top {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 156px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_28 {
+		opacity: 0;
+		fill: rgba(255,255,255,1);
+	}
+	.bg_A48_Rectangle_28 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 156px;
+		left: 0px;
+		top: 0px;
+	}
+	#status_bar_light {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background {
+		opacity: 1;
+		fill: transparent;
+	}
+	.Background {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 375px;
+		height: 44px;
+	}
+	#Battery {
+		opacity: 1;
+		position: absolute;
+		width: 24.328px;
+		height: 11.333px;
+		left: 336px;
+		top: 17.333px;
+		overflow: visible;
+	}
+	#Border {
+		opacity: 1;
+		position: absolute;
+		width: 22px;
+		height: 11.333px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Cap {
+		opacity: 1;
+		position: absolute;
+		width: 1.328px;
+		height: 4px;
+		left: 23px;
+		top: 3.667px;
+		overflow: visible;
+	}
+	#Capacity {
+		opacity: 1;
+		position: absolute;
+		width: 18px;
+		height: 7.333px;
+		left: 2px;
+		top: 2px;
+		overflow: visible;
+	}
+	#Wifi {
+		opacity: 1;
+		position: absolute;
+		width: 15.272px;
+		height: 10.966px;
+		left: 315.694px;
+		top: 17.331px;
+		overflow: visible;
+	}
+	#Wifi_A48_Group_19 {
+		opacity: 1;
+		position: absolute;
+		width: 15.272px;
+		height: 10.966px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Cellular_Connection {
+		opacity: 1;
+		position: absolute;
+		width: 17px;
+		height: 10.667px;
+		left: 293.667px;
+		top: 17.667px;
+		overflow: visible;
+	}
+	#Cellular_Connection_A48_Group_21 {
+		opacity: 1;
+		position: absolute;
+		width: 17px;
+		height: 10.667px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Bars___Time_Black {
+		opacity: 1;
+		position: absolute;
+		width: 54px;
+		height: 16px;
+		left: 20px;
+		top: 15px;
+		overflow: visible;
+	}
+	#Background_A48_Path_20 {
+		opacity: 1;
+		fill: rgba(0,0,0,0);
+	}
+	.Background_A48_Path_20 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 54px;
+		height: 16px;
+	}
+	#__Time {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.__Time {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 4.89px;
+		left: 12.823px;
+		width: 27.451px;
+		height: 10.35px;
+	}
+	#icons_back_light {
+		opacity: 1;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 24px;
+		top: 56px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_29 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_29 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#icon {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.icon {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5.231px;
+		left: 4px;
+		width: 16px;
+		height: 13.51px;
+	}
+	#icond_filter_light {
+		opacity: 1;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 327px;
+		top: 56px;
+		overflow: visible;
+	}
+	#bg_A48_Rectangle_30 {
+		opacity: 1;
+		fill: transparent;
+	}
+	.bg_A48_Rectangle_30 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#path_A48_Path_22 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.path_A48_Path_22 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5px;
+		left: 3px;
+		width: 18px;
+		height: 14px;
+	}
+</style>
 </head>
 <body>
+<div id="Profile___1">
+	<div id="content">
+		
 
-<div class="container">
-	<h1><img src="CydiaIcon.png"> Themes4Cydia</h1>
-</div>
 
-<div class="container">
-	<div class="well">
-		<p><span class="text-primary"><b>Themes4Cydia</b></span> is a Cydia repository template.</p>
-		<a class="btn btn-sm btn-default" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://developer7769.github.io/repo/">Add to Cydia</a>
+
+<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://developer7769.github.io/repo/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="
+    /* margin: 0; */
+    /* padding: 0; */
+    position: absolute;
+    z-index: 1;
+    width: 343px;
+    /* height: 483px; */
+    left: 16px;
+    top: 400px;
+    overflow: hidde;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #00000000;
+    box-shadow: 0px 0px 22px rgba(106, 108, 124, 0.8);
+">Add to Cydia</a>
+
+<div id="posts">
+			<div id="posts_A48_Group_2">
+				<div id="post">
+					<svg class="form" viewBox="0 0 343 221">
+						<path id="form" d="M 12 0 L 331 0 C 337.6274108886719 0 343 5.348382472991943 343 11.94594573974609 L 343 209.0540618896484 C 343 215.651611328125 337.6274108886719 221 331 221 L 12 221 C 5.372583389282227 221 0 215.651611328125 0 209.0540618896484 L 0 11.94594573974609 C 0 5.348382472991943 5.372583389282227 0 12 0 Z">
+						</path>
+					</svg>
+					<div id="content_A48_Group_3">
+						<div id="Your_success_and_happiness_lie">
+							<span>Your success and happiness lies in you. Resolve to keep happy, and your joy and you shall form an invincible host against difficulties. The sweetest of all sounds is praise.</span>
+						</div>
+						<div id="icons">
+							<div id="ID256">
+								<span>256</span>
+							</div>
+							<div id="ID4_K">
+								<span>4 K</span>
+							</div>
+							<div id="icons_share_dark">
+								<svg class="bg">
+									<rect id="bg" rx="0" ry="0" x="0" y="0" width="24" height="24">
+									</rect>
+								</svg>
+								<svg class="path" viewBox="6 5 14.761 18">
+									<path id="path" d="M 11.6583137512207 13.28246021270752 C 11.74031925201416 13.52847385406494 11.74031925201416 13.77448844909668 11.74031925201416 14.02050113677979 C 11.74031925201416 14.26651382446289 11.69931697845459 14.51252841949463 11.6583137512207 14.75854206085205 L 16.00455665588379 17.99772262573242 C 16.49658203125 17.54669761657715 17.1936206817627 17.25968170166016 17.89066123962402 17.25968170166016 C 19.48974990844727 17.25968170166016 20.76082038879395 18.53075218200684 20.76082038879395 20.12984085083008 C 20.76082038879395 21.72892951965332 19.48974990844727 23 17.89066123962402 23 C 16.29157066345215 23 15.02050113677979 21.72892951965332 15.02050113677979 20.12984085083008 C 15.02050113677979 19.88382720947266 15.06150245666504 19.63781356811523 15.10250568389893 19.39179992675781 L 10.75626468658447 16.15261840820312 C 10.26423740386963 16.6036434173584 9.608200073242188 16.89065933227539 8.870159149169922 16.89065933227539 C 7.27107048034668 16.89065933227539 6 15.61959075927734 6 14.02050113677979 C 6 12.42141246795654 7.27107048034668 11.15034198760986 8.870159149169922 11.15034198760986 C 9.608200073242188 11.15034198760986 10.26423740386963 11.43735790252686 10.75626468658447 11.88838291168213 L 15.10250568389893 8.649202346801758 C 15.06150245666504 8.362187385559082 15.02050113677979 8.116172790527344 15.02050113677979 7.870159149169922 C 15.02050113677979 6.27107048034668 16.29157066345215 5 17.89066123962402 5 C 19.48974990844727 5 20.76082038879395 6.27107048034668 20.76082038879395 7.870159149169922 C 20.76082038879395 9.469247817993164 19.48974990844727 10.74031925201416 17.89066123962402 10.74031925201416 C 17.15262031555176 10.74031925201416 16.49658203125 10.45330238342285 16.00455665588379 10.00227832794189 L 11.6583137512207 13.28246021270752 L 11.6583137512207 13.28246021270752 L 11.6583137512207 13.28246021270752 Z M 17.89066123962402 9.100228309631348 C 18.58769989013672 9.100228309631348 19.12072944641113 8.567198753356934 19.12072944641113 7.870159149169922 C 19.12072944641113 7.173120498657227 18.58769989013672 6.640090942382812 17.89066123962402 6.640090942382812 C 17.1936206817627 6.640090942382812 16.66059112548828 7.173120498657227 16.66059112548828 7.870159149169922 C 16.66059112548828 8.567198753356934 17.1936206817627 9.100228309631348 17.89066123962402 9.100228309631348 L 17.89066123962402 9.100228309631348 Z M 17.89066123962402 21.40091133117676 C 18.58769989013672 21.40091133117676 19.12072944641113 20.86788177490234 19.12072944641113 20.17084312438965 C 19.12072944641113 19.47380447387695 18.58769989013672 18.94077491760254 17.89066123962402 18.94077491760254 C 17.1936206817627 18.94077491760254 16.66059112548828 19.47380447387695 16.66059112548828 20.17084312438965 C 16.66059112548828 20.86788177490234 17.1936206817627 21.40091133117676 17.89066123962402 21.40091133117676 L 17.89066123962402 21.40091133117676 Z M 8.870159149169922 15.25056934356689 C 9.567198753356934 15.25056934356689 10.10022830963135 14.71753978729248 10.10022830963135 14.02050113677979 C 10.10022830963135 13.32346248626709 9.567198753356934 12.79043292999268 8.870159149169922 12.79043292999268 C 8.173120498657227 12.79043292999268 7.640090942382812 13.32346248626709 7.640090942382812 14.02050113677979 C 7.640090942382812 14.71753978729248 8.173120498657227 15.25056934356689 8.870159149169922 15.25056934356689 L 8.870159149169922 15.25056934356689 Z">
+									</path>
+								</svg>
+							</div>
+							<div id="icons_comment_dark">
+								<svg class="bg_A48_Rectangle_2">
+									<rect id="bg_A48_Rectangle_2" rx="0" ry="0" x="0" y="0" width="24" height="24">
+									</rect>
+								</svg>
+								<svg class="path_A48_Path_3" viewBox="5 5 18 18">
+									<path id="path_A48_Path_3" d="M 5.327272415161133 20.7909107208252 C 5 22.05908966064453 5.94090747833252 23 7.209090232849121 22.67272567749023 L 9.909090042114258 22.01818084716797 C 11.1363639831543 22.67272758483887 12.56818199157715 23 14 23 C 18.99090957641602 23 23 18.99090957641602 23 14 C 23 9.009090423583984 18.99090957641602 5 14 5 C 9.009090423583984 5 5 9.009090423583984 5 14 C 5 15.43181705474854 5.327272415161133 16.8636360168457 5.981819629669189 18.1318187713623 L 5.327272415161133 20.7909107208252 L 5.327272415161133 20.7909107208252 Z M 7.6590895652771 18.21363830566406 C 7.69999885559082 18.00909042358398 7.69999885559082 17.80454635620117 7.577272415161133 17.60000228881836 C 6.963636875152588 16.49545669555664 6.636364459991455 15.26817989349365 6.636364459991455 14 C 6.636364459991455 9.950000762939453 9.94999885559082 6.636363506317139 14 6.636363506317139 C 18.05000305175781 6.636363506317139 21.36363792419434 9.950000762939453 21.36363792419434 14 C 21.36363792419434 18.05000305175781 18.04999923706055 21.3636360168457 14 21.3636360168457 C 12.7318172454834 21.3636360168457 11.50454521179199 21.03636360168457 10.39999961853027 20.42272758483887 C 10.23636245727539 20.30000305175781 9.990909576416016 20.30000305175781 9.78636360168457 20.34091186523438 L 6.922727584838867 21.03636360168457 L 7.6590895652771 18.21363830566406 L 7.6590895652771 18.21363830566406 Z M 17.68181991577148 13.18181705474854 C 18.13182067871094 13.18181705474854 18.5 12.81363582611084 18.5 12.36363506317139 C 18.5 11.91363525390625 18.13182067871094 11.54545402526855 17.68181991577148 11.54545402526855 L 10.31818199157715 11.54545402526855 C 9.868183135986328 11.54545402526855 9.5 11.91363525390625 9.5 12.36363506317139 C 9.5 12.81363582611084 9.868183135986328 13.18181705474854 10.31818199157715 13.18181705474854 L 17.68181991577148 13.18181705474854 L 17.68181991577148 13.18181705474854 Z M 17.68181991577148 16.45454788208008 C 18.13182067871094 16.45454788208008 18.5 16.08636283874512 18.5 15.6363639831543 C 18.5 15.18636417388916 18.13182067871094 14.81818199157715 17.68181991577148 14.81818199157715 L 12.77272796630859 14.81818199157715 C 12.32272720336914 14.81818199157715 11.95454692840576 15.18636417388916 11.95454692840576 15.6363639831543 C 11.95454692840576 16.08636283874512 12.32272720336914 16.45454788208008 12.77272796630859 16.45454788208008 L 17.68181991577148 16.45454788208008 L 17.68181991577148 16.45454788208008 Z">
+									</path>
+								</svg>
+							</div>
+							<div id="icons_like_dark">
+								<svg class="bg_A48_Rectangle_3">
+									<rect id="bg_A48_Rectangle_3" rx="0" ry="0" x="0" y="0" width="24" height="24">
+									</rect>
+								</svg>
+								<svg class="path_A48_Path_4" viewBox="5 5 18 16.353">
+									<path id="path_A48_Path_4" d="M 14.28636360168457 6.431818008422852 C 15.14545440673828 5.531818389892578 16.29090881347656 5 17.68181800842285 5 C 20.66818237304688 5 23 7.413636207580566 23 10.85000038146973 C 23 12.89545440673828 21.97727394104004 14.6136360168457 20.1363639831543 16.45454597473145 C 19.72727394104004 16.8636360168457 18.5 17.96818161010742 18.45909118652344 18.00909042358398 C 18.29545402526855 18.17272758483887 18.09090995788574 18.33636283874512 17.8863639831543 18.54090881347656 C 17.64090919494629 18.74545478820801 17.35454559326172 18.99090766906738 17.10909080505371 19.19545364379883 C 16.53636169433594 19.68636322021484 15.92272758483887 20.13636207580566 15.30908966064453 20.58636283874512 C 15.10454559326172 20.75 14.89999961853027 20.87272644042969 14.73636245727539 21.03636360168457 C 14.6136360168457 21.1181812286377 14.53181838989258 21.15909004211426 14.49090766906738 21.19999885559082 C 14.20454406738281 21.40454483032227 13.83636283874512 21.40454483032227 13.54999923706055 21.19999885559082 C 13.50909042358398 21.15909194946289 13.42727279663086 21.1181812286377 13.30454444885254 21.03636360168457 C 13.14090919494629 20.91363525390625 12.93636322021484 20.74999809265137 12.7318172454834 20.58636283874512 C 12.1181812286377 20.1363639831543 11.50454521179199 19.64545440673828 10.93181800842285 19.19545364379883 C 10.64545440673828 18.94999885559082 10.39999961853027 18.74545478820801 10.15454578399658 18.54090881347656 C 9.950000762939453 18.37727165222168 9.78636360168457 18.17272567749023 9.581818580627441 18.00909042358398 C 9.5 17.96818161010742 8.272727966308594 16.8636360168457 7.863636493682861 16.45454597473145 C 5.981818199157715 14.6136360168457 5 12.89545440673828 5 10.85000038146973 C 5 7.413636207580566 7.331818103790283 5 10.31818199157715 5 C 11.70909118652344 5 12.85454559326172 5.531818389892578 13.71363639831543 6.431818008422852 C 13.83636283874512 6.513636589050293 13.91818237304688 6.636363983154297 14 6.718181610107422 C 14.08181762695312 6.636363983154297 14.16363525390625 6.513636589050293 14.28636360168457 6.431818008422852 L 14.28636360168457 6.431818008422852 Z M 14.32727241516113 19.31818199157715 C 14.89999961853027 18.86818313598633 15.51363563537598 18.41818237304688 16.04545402526855 17.96818161010742 C 16.33181762695312 17.76363754272461 16.57727241516113 17.5181827545166 16.78181838989258 17.31363677978516 C 16.98636245727539 17.14999961853027 17.14999961853027 16.98636436462402 17.31363487243652 16.82272720336914 C 17.39545440673828 16.74090957641602 18.62272644042969 15.6363639831543 18.99090766906738 15.2681827545166 C 20.54545402526855 13.71363639831543 21.3636360168457 12.3636360168457 21.3636360168457 10.85000038146973 C 21.3636360168457 8.313636779785156 19.72727394104004 6.636363983154297 17.68181800842285 6.636363983154297 C 16.78181838989258 6.636363983154297 16.04545402526855 7.004545211791992 15.43181800842285 7.577272891998291 C 15.22727203369141 7.781818389892578 15.02272796630859 8.027273178100586 14.89999961853027 8.231818199157715 C 14.81818199157715 8.354545593261719 14.77727317810059 8.477272987365723 14.73636436462402 8.518181800842285 C 14.45000076293945 9.172727584838867 13.55000114440918 9.172727584838867 13.22272682189941 8.518181800842285 C 13.22272682189941 8.477272033691406 13.14090919494629 8.395454406738281 13.05909156799316 8.231818199157715 C 12.89545440673828 7.986363887786865 12.73181915283203 7.781818389892578 12.52727317810059 7.577272891998291 C 11.95454597473145 7.004545211791992 11.21818161010742 6.636363983154297 10.31818199157715 6.636363983154297 C 8.272727966308594 6.636363983154297 6.636363983154297 8.313636779785156 6.636363983154297 10.85000038146973 C 6.636363983154297 12.3636360168457 7.454545497894287 13.71363639831543 9.009090423583984 15.30908966064453 C 9.377272605895996 15.67727279663086 10.60454559326172 16.78181838989258 10.68636322021484 16.8636360168457 C 10.85000038146973 17.02727317810059 11.01363563537598 17.19090843200684 11.21818161010742 17.35454559326172 C 11.46363639831543 17.55909156799316 11.70909118652344 17.76363754272461 11.95454406738281 18.00909042358398 C 12.48636245727539 18.4590892791748 13.09999847412109 18.90909004211426 13.67272567749023 19.35909080505371 C 13.79545211791992 19.44090843200684 13.87727165222168 19.52272796630859 13.99999809265137 19.60454368591309 C 14.08181762695312 19.48181915283203 14.20454597473145 19.40000152587891 14.32727241516113 19.31818199157715 L 14.32727241516113 19.31818199157715 Z">
+									</path>
+								</svg>
+							</div>
+						</div>
+						<svg class="divider">
+							<rect id="divider" rx="0.5" ry="0.5" x="0" y="0" width="295" height="1">
+							</rect>
+						</svg>
+					</div>
+					<div id="avatar_black">
+						<div id="author">
+							<div id="Jony_Blake">
+								<span>Jony Blake</span>
+							</div>
+							<div id="ID1_hour_ago">
+								<span>1 hour ago</span>
+							</div>
+							<svg class="avatar">
+								<pattern elementid="avatar_A48_Rectangle_6" id="avatar_A48_Rectangle_6_pattern" x="0" y="0" width="100%" height="100%">
+									<image x="0" y="0" width="100%" height="100%" href="avatar_A48_Rectangle_6_pattern.png" xlink:href="avatar_A48_Rectangle_6_pattern.png"></image>
+								</pattern>
+								<rect id="avatar" rx="12" ry="12" x="0" y="0" width="36" height="36">
+								</rect>
+							</svg>
+						</div>
+						<div id="icons_chevron_light">
+							<svg class="bg_A48_Rectangle_7">
+								<rect id="bg_A48_Rectangle_7" rx="0" ry="0" x="0" y="0" width="24" height="24">
+								</rect>
+							</svg>
+							<svg class="line">
+								<rect id="line" rx="1" ry="1" x="0" y="0" width="8" height="2">
+								</rect>
+							</svg>
+							<svg class="line_A48_Rectangle_9">
+								<rect id="line_A48_Rectangle_9" rx="1" ry="1" x="0" y="0" width="8" height="2">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="posts_A48_Group_6">
+				<div id="post_A48_SymbolInstance_7">
+					<svg class="form_A48_Path_5" viewBox="0 0 343 221">
+						<path id="form_A48_Path_5" d="M 12 0 L 331 0 C 337.6274108886719 0 343 5.348382472991943 343 11.94594573974609 L 343 209.0540618896484 C 343 215.651611328125 337.6274108886719 221 331 221 L 12 221 C 5.372583389282227 221 0 215.651611328125 0 209.0540618896484 L 0 11.94594573974609 C 0 5.348382472991943 5.372583389282227 0 12 0 Z">
+						</path>
+					</svg>
+					<div id="content_A48_Group_7">
+						<div id="When_one_door_of_happiness_clo">
+							<span>When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us. </span>
+						</div>
+						<div id="icons_A48_Group_8">
+							<div id="ID256_A48_Text_7">
+								<span>256</span>
+							</div>
+							<div id="ID4_K_A48_Text_8">
+								<span>4 K</span>
+							</div>
+							<div id="icons_share_dark_A48_SymbolInstance_8">
+								<svg class="bg_A48_Rectangle_10">
+									<rect id="bg_A48_Rectangle_10" rx="0" ry="0" x="0" y="0" width="24" height="24">
+									</rect>
+								</svg>
+								<svg class="path_A48_Path_6" viewBox="6 5 14.761 18">
+									<path id="path_A48_Path_6" d="M 11.6583137512207 13.28246021270752 C 11.74031925201416 13.52847385406494 11.74031925201416 13.77448844909668 11.74031925201416 14.02050113677979 C 11.74031925201416 14.26651382446289 11.69931697845459 14.51252841949463 11.6583137512207 14.75854206085205 L 16.00455665588379 17.99772262573242 C 16.49658203125 17.54669761657715 17.1936206817627 17.25968170166016 17.89066123962402 17.25968170166016 C 19.48974990844727 17.25968170166016 20.76082038879395 18.53075218200684 20.76082038879395 20.12984085083008 C 20.76082038879395 21.72892951965332 19.48974990844727 23 17.89066123962402 23 C 16.29157066345215 23 15.02050113677979 21.72892951965332 15.02050113677979 20.12984085083008 C 15.02050113677979 19.88382720947266 15.06150245666504 19.63781356811523 15.10250568389893 19.39179992675781 L 10.75626468658447 16.15261840820312 C 10.26423740386963 16.6036434173584 9.608200073242188 16.89065933227539 8.870159149169922 16.89065933227539 C 7.27107048034668 16.89065933227539 6 15.61959075927734 6 14.02050113677979 C 6 12.42141246795654 7.27107048034668 11.15034198760986 8.870159149169922 11.15034198760986 C 9.608200073242188 11.15034198760986 10.26423740386963 11.43735790252686 10.75626468658447 11.88838291168213 L 15.10250568389893 8.649202346801758 C 15.06150245666504 8.362187385559082 15.02050113677979 8.116172790527344 15.02050113677979 7.870159149169922 C 15.02050113677979 6.27107048034668 16.29157066345215 5 17.89066123962402 5 C 19.48974990844727 5 20.76082038879395 6.27107048034668 20.76082038879395 7.870159149169922 C 20.76082038879395 9.469247817993164 19.48974990844727 10.74031925201416 17.89066123962402 10.74031925201416 C 17.15262031555176 10.74031925201416 16.49658203125 10.45330238342285 16.00455665588379 10.00227832794189 L 11.6583137512207 13.28246021270752 L 11.6583137512207 13.28246021270752 L 11.6583137512207 13.28246021270752 Z M 17.89066123962402 9.100228309631348 C 18.58769989013672 9.100228309631348 19.12072944641113 8.567198753356934 19.12072944641113 7.870159149169922 C 19.12072944641113 7.173120498657227 18.58769989013672 6.640090942382812 17.89066123962402 6.640090942382812 C 17.1936206817627 6.640090942382812 16.66059112548828 7.173120498657227 16.66059112548828 7.870159149169922 C 16.66059112548828 8.567198753356934 17.1936206817627 9.100228309631348 17.89066123962402 9.100228309631348 L 17.89066123962402 9.100228309631348 Z M 17.89066123962402 21.40091133117676 C 18.58769989013672 21.40091133117676 19.12072944641113 20.86788177490234 19.12072944641113 20.17084312438965 C 19.12072944641113 19.47380447387695 18.58769989013672 18.94077491760254 17.89066123962402 18.94077491760254 C 17.1936206817627 18.94077491760254 16.66059112548828 19.47380447387695 16.66059112548828 20.17084312438965 C 16.66059112548828 20.86788177490234 17.1936206817627 21.40091133117676 17.89066123962402 21.40091133117676 L 17.89066123962402 21.40091133117676 Z M 8.870159149169922 15.25056934356689 C 9.567198753356934 15.25056934356689 10.10022830963135 14.71753978729248 10.10022830963135 14.02050113677979 C 10.10022830963135 13.32346248626709 9.567198753356934 12.79043292999268 8.870159149169922 12.79043292999268 C 8.173120498657227 12.79043292999268 7.640090942382812 13.32346248626709 7.640090942382812 14.02050113677979 C 7.640090942382812 14.71753978729248 8.173120498657227 15.25056934356689 8.870159149169922 15.25056934356689 L 8.870159149169922 15.25056934356689 Z">
+									</path>
+								</svg>
+							</div>
+							<div id="icons_comment_dark_A48_SymbolInstance_9">
+								<svg class="bg_A48_Rectangle_11">
+									<rect id="bg_A48_Rectangle_11" rx="0" ry="0" x="0" y="0" width="24" height="24">
+									</rect>
+								</svg>
+								<svg class="path_A48_Path_7" viewBox="5 5 18 18">
+									<path id="path_A48_Path_7" d="M 5.327272415161133 20.7909107208252 C 5 22.05908966064453 5.94090747833252 23 7.209090232849121 22.67272567749023 L 9.909090042114258 22.01818084716797 C 11.1363639831543 22.67272758483887 12.56818199157715 23 14 23 C 18.99090957641602 23 23 18.99090957641602 23 14 C 23 9.009090423583984 18.99090957641602 5 14 5 C 9.009090423583984 5 5 9.009090423583984 5 14 C 5 15.43181705474854 5.327272415161133 16.8636360168457 5.981819629669189 18.1318187713623 L 5.327272415161133 20.7909107208252 L 5.327272415161133 20.7909107208252 Z M 7.6590895652771 18.21363830566406 C 7.69999885559082 18.00909042358398 7.69999885559082 17.80454635620117 7.577272415161133 17.60000228881836 C 6.963636875152588 16.49545669555664 6.636364459991455 15.26817989349365 6.636364459991455 14 C 6.636364459991455 9.950000762939453 9.94999885559082 6.636363506317139 14 6.636363506317139 C 18.05000305175781 6.636363506317139 21.36363792419434 9.950000762939453 21.36363792419434 14 C 21.36363792419434 18.05000305175781 18.04999923706055 21.3636360168457 14 21.3636360168457 C 12.7318172454834 21.3636360168457 11.50454521179199 21.03636360168457 10.39999961853027 20.42272758483887 C 10.23636245727539 20.30000305175781 9.990909576416016 20.30000305175781 9.78636360168457 20.34091186523438 L 6.922727584838867 21.03636360168457 L 7.6590895652771 18.21363830566406 L 7.6590895652771 18.21363830566406 Z M 17.68181991577148 13.18181705474854 C 18.13182067871094 13.18181705474854 18.5 12.81363582611084 18.5 12.36363506317139 C 18.5 11.91363525390625 18.13182067871094 11.54545402526855 17.68181991577148 11.54545402526855 L 10.31818199157715 11.54545402526855 C 9.868183135986328 11.54545402526855 9.5 11.91363525390625 9.5 12.36363506317139 C 9.5 12.81363582611084 9.868183135986328 13.18181705474854 10.31818199157715 13.18181705474854 L 17.68181991577148 13.18181705474854 L 17.68181991577148 13.18181705474854 Z M 17.68181991577148 16.45454788208008 C 18.13182067871094 16.45454788208008 18.5 16.08636283874512 18.5 15.6363639831543 C 18.5 15.18636417388916 18.13182067871094 14.81818199157715 17.68181991577148 14.81818199157715 L 12.77272796630859 14.81818199157715 C 12.32272720336914 14.81818199157715 11.95454692840576 15.18636417388916 11.95454692840576 15.6363639831543 C 11.95454692840576 16.08636283874512 12.32272720336914 16.45454788208008 12.77272796630859 16.45454788208008 L 17.68181991577148 16.45454788208008 L 17.68181991577148 16.45454788208008 Z">
+									</path>
+								</svg>
+							</div>
+							<div id="icons_like_dark_A48_SymbolInstance_10">
+								<svg class="bg_A48_Rectangle_12">
+									<rect id="bg_A48_Rectangle_12" rx="0" ry="0" x="0" y="0" width="24" height="24">
+									</rect>
+								</svg>
+								<svg class="path_A48_Path_8" viewBox="5 5 18 16.353">
+									<path id="path_A48_Path_8" d="M 14.28636360168457 6.431818008422852 C 15.14545440673828 5.531818389892578 16.29090881347656 5 17.68181800842285 5 C 20.66818237304688 5 23 7.413636207580566 23 10.85000038146973 C 23 12.89545440673828 21.97727394104004 14.6136360168457 20.1363639831543 16.45454597473145 C 19.72727394104004 16.8636360168457 18.5 17.96818161010742 18.45909118652344 18.00909042358398 C 18.29545402526855 18.17272758483887 18.09090995788574 18.33636283874512 17.8863639831543 18.54090881347656 C 17.64090919494629 18.74545478820801 17.35454559326172 18.99090766906738 17.10909080505371 19.19545364379883 C 16.53636169433594 19.68636322021484 15.92272758483887 20.13636207580566 15.30908966064453 20.58636283874512 C 15.10454559326172 20.75 14.89999961853027 20.87272644042969 14.73636245727539 21.03636360168457 C 14.6136360168457 21.1181812286377 14.53181838989258 21.15909004211426 14.49090766906738 21.19999885559082 C 14.20454406738281 21.40454483032227 13.83636283874512 21.40454483032227 13.54999923706055 21.19999885559082 C 13.50909042358398 21.15909194946289 13.42727279663086 21.1181812286377 13.30454444885254 21.03636360168457 C 13.14090919494629 20.91363525390625 12.93636322021484 20.74999809265137 12.7318172454834 20.58636283874512 C 12.1181812286377 20.1363639831543 11.50454521179199 19.64545440673828 10.93181800842285 19.19545364379883 C 10.64545440673828 18.94999885559082 10.39999961853027 18.74545478820801 10.15454578399658 18.54090881347656 C 9.950000762939453 18.37727165222168 9.78636360168457 18.17272567749023 9.581818580627441 18.00909042358398 C 9.5 17.96818161010742 8.272727966308594 16.8636360168457 7.863636493682861 16.45454597473145 C 5.981818199157715 14.6136360168457 5 12.89545440673828 5 10.85000038146973 C 5 7.413636207580566 7.331818103790283 5 10.31818199157715 5 C 11.70909118652344 5 12.85454559326172 5.531818389892578 13.71363639831543 6.431818008422852 C 13.83636283874512 6.513636589050293 13.91818237304688 6.636363983154297 14 6.718181610107422 C 14.08181762695312 6.636363983154297 14.16363525390625 6.513636589050293 14.28636360168457 6.431818008422852 L 14.28636360168457 6.431818008422852 Z M 14.32727241516113 19.31818199157715 C 14.89999961853027 18.86818313598633 15.51363563537598 18.41818237304688 16.04545402526855 17.96818161010742 C 16.33181762695312 17.76363754272461 16.57727241516113 17.5181827545166 16.78181838989258 17.31363677978516 C 16.98636245727539 17.14999961853027 17.14999961853027 16.98636436462402 17.31363487243652 16.82272720336914 C 17.39545440673828 16.74090957641602 18.62272644042969 15.6363639831543 18.99090766906738 15.2681827545166 C 20.54545402526855 13.71363639831543 21.3636360168457 12.3636360168457 21.3636360168457 10.85000038146973 C 21.3636360168457 8.313636779785156 19.72727394104004 6.636363983154297 17.68181800842285 6.636363983154297 C 16.78181838989258 6.636363983154297 16.04545402526855 7.004545211791992 15.43181800842285 7.577272891998291 C 15.22727203369141 7.781818389892578 15.02272796630859 8.027273178100586 14.89999961853027 8.231818199157715 C 14.81818199157715 8.354545593261719 14.77727317810059 8.477272987365723 14.73636436462402 8.518181800842285 C 14.45000076293945 9.172727584838867 13.55000114440918 9.172727584838867 13.22272682189941 8.518181800842285 C 13.22272682189941 8.477272033691406 13.14090919494629 8.395454406738281 13.05909156799316 8.231818199157715 C 12.89545440673828 7.986363887786865 12.73181915283203 7.781818389892578 12.52727317810059 7.577272891998291 C 11.95454597473145 7.004545211791992 11.21818161010742 6.636363983154297 10.31818199157715 6.636363983154297 C 8.272727966308594 6.636363983154297 6.636363983154297 8.313636779785156 6.636363983154297 10.85000038146973 C 6.636363983154297 12.3636360168457 7.454545497894287 13.71363639831543 9.009090423583984 15.30908966064453 C 9.377272605895996 15.67727279663086 10.60454559326172 16.78181838989258 10.68636322021484 16.8636360168457 C 10.85000038146973 17.02727317810059 11.01363563537598 17.19090843200684 11.21818161010742 17.35454559326172 C 11.46363639831543 17.55909156799316 11.70909118652344 17.76363754272461 11.95454406738281 18.00909042358398 C 12.48636245727539 18.4590892791748 13.09999847412109 18.90909004211426 13.67272567749023 19.35909080505371 C 13.79545211791992 19.44090843200684 13.87727165222168 19.52272796630859 13.99999809265137 19.60454368591309 C 14.08181762695312 19.48181915283203 14.20454597473145 19.40000152587891 14.32727241516113 19.31818199157715 L 14.32727241516113 19.31818199157715 Z">
+									</path>
+								</svg>
+							</div>
+						</div>
+						<svg class="divider_A48_Rectangle_13">
+							<rect id="divider_A48_Rectangle_13" rx="0.5" ry="0.5" x="0" y="0" width="295" height="1">
+							</rect>
+						</svg>
+					</div>
+					<div id="avatar_black_A48_Group_9">
+						<div id="author_A48_SymbolInstance_11">
+							<div id="Jony_Blake_A48_Text_9">
+								<span>Jony Blake</span>
+							</div>
+							<div id="ID2_hour_ago">
+								<span>2 hour ago</span>
+							</div>
+							<svg class="avatar_A48_Rectangle_14">
+								<pattern elementid="avatar_A48_Rectangle_15" id="avatar_A48_Rectangle_15_pattern" x="0" y="0" width="100%" height="100%">
+									<image x="0" y="0" width="100%" height="100%" href="avatar_A48_Rectangle_15_pattern.png" xlink:href="avatar_A48_Rectangle_15_pattern.png"></image>
+								</pattern>
+								<rect id="avatar_A48_Rectangle_14" rx="12" ry="12" x="0" y="0" width="36" height="36">
+								</rect>
+							</svg>
+						</div>
+						<div id="icons_chevron_light_A48_SymbolInstance_12">
+							<svg class="bg_A48_Rectangle_16">
+								<rect id="bg_A48_Rectangle_16" rx="0" ry="0" x="0" y="0" width="24" height="24">
+								</rect>
+							</svg>
+							<svg class="line_A48_Rectangle_17">
+								<rect id="line_A48_Rectangle_17" rx="1" ry="1" x="0" y="0" width="8" height="2">
+								</rect>
+							</svg>
+							<svg class="line_A48_Rectangle_18">
+								<rect id="line_A48_Rectangle_18" rx="1" ry="1" x="0" y="0" width="8" height="2">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+<div id="data">
+			<svg class="divider_A48_Rectangle_21">
+				<rect id="divider_A48_Rectangle_21" rx="0.5" ry="0.5" x="0" y="0" width="1" height="40">
+				</rect>
+			</svg>
+			<svg class="divider_A48_Rectangle_22">
+				<rect id="divider_A48_Rectangle_22" rx="0.5" ry="0.5" x="0" y="0" width="1" height="40">
+				</rect>
+			</svg>
+			<div id="LIKES">
+				<span>LIKES</span>
+			</div>
+			<div id="ID321">
+				<span>321</span>
+			</div>
+			<div id="FOLLOWING">
+				<span>FOLLOWING</span>
+			</div>
+			<div id="ID150">
+				<span>150</span>
+			</div>
+			<div id="FOLLOWERS">
+				<span>Tweaks</span>
+			</div>
+			<div id="ID125">
+				<span>125</span>
+			</div>
+		</div>
+		<svg class="photo">
+			<pattern elementid="photo_A48_Rectangle_24" id="photo_A48_Rectangle_24_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="-100" width="200%" height="150%" href="photo_A48_Rectangle_24_pattern.png" xlink:href="photo_A48_Rectangle_24_pattern.png"></image>
+			</pattern>
+			<rect id="photo" rx="0" ry="0" x="0" y="0" width="375" height="320">
+			</rect>
+		</svg>
+		<svg class="bg_A48_Rectangle_25">
+			<linearGradient spreadMethod="pad" id="LinearGradientFill1" x1="0.5" x2="0.5" y1="0.16365131735801697" y2="1">
+				<stop offset="0" stop-color="#21232c" stop-opacity="0"></stop>
+				<stop offset="1" stop-color="#2a2e43" stop-opacity="1"></stop>
+			</linearGradient>
+			<rect id="bg_A48_Rectangle_25" rx="0" ry="0" x="0" y="0" width="375" height="152">
+			</rect>
+		</svg>
+
+		<div id="Jony_Blake_A48_Text_19">
+			<span>Themes4Cydia</span>
+
+		</div>
 	</div>
+	<div id="bottom">
+		<div id="home_indicator_dark">
+			<svg class="bg_A48_Rectangle_26">
+				<rect id="bg_A48_Rectangle_26" rx="0" ry="0" x="0" y="0" width="375" height="24">
+				</rect>
+			</svg>
+			<svg class="indicator">
+				<rect id="indicator" rx="1" ry="1" x="0" y="0" width="134" height="3">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	
 </div>
-
-
-
-
 
 </body></html>
