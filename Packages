@@ -1,11 +1,11 @@
 Package: com.anemone3_3.0_beta5
 Version: 3.0~beta5
 Section: Tweaks
-Maintainer: Reposi3 <reposithree@gmail.com>
+Maintainer: Themes4Cydia <none>
 Depends: firmware (>11.0),
 Architecture: iphoneos-arm
 Filename: debs/com.anemone3_3.0_beta5.deb
 Size: 11285692
 MD5sum: d75d950d43aba2b863df360fbb879571
 Name: anemone3
-Author: Reposi3 <reposithree@gmail.com>
+Author: Themes4Cydia <none>
