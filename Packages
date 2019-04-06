@@ -9,3 +9,24 @@ Size: 11285692
 MD5sum: 7adc37c9c7050089c23477ea9ebc2f91
 Name: anemone3
 Author: Themes4Cydia <none>
+
+Package: com.unlimapps.twitterpp
+Priority: optional
+Section: Tweaks
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Architecture: iphoneos-arm
+Version: 1.2r-38
+Depends: firmware (>= 5.0), mobilesubstrate, com.unlimapps.uasharedtools (>= 2.1r-47)
+Filename: https://beta.unlimapps.com/deb/com.unlimapps.twitterpp_1.2r-38_iphoneos-arm.deb
+Size: 866608
+MD5sum: a7388eeb111294e4477d59a4a84114ad
+SHA1: 6c2b29b2dd9a6ab948384d8855576f15f7c44c7a
+SHA256: fbea3abc681622225a4a9a517f50c5e23fb64538589cf52dc153f82be387d8b5
+SHA512: b701122f45945cf4ebcaed5cb6d73c38fddc923323cff4268d9ecd4370014454d4804ece4153077a08e105cc1524c1a87c75684d900beef6308b27bf5a5df0b9
+Description: The Twitter tweak that give you more sharing options, long tweets and much more!
+Author: UnlimApps Inc <support@unlimapps.com>
+Name: Twitter ++
+Depiction: http://beta.unlimapps.com/depiction/com.unlimapps.twitterpp
+Homepage: http://beta.unlimapps.com/depiction/com.unlimapps.twitterpp
+dev: i4iphones
+Tag: purpose::extension, role::enduser
